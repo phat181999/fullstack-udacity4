@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { Injectable } from "@angular/core";
 import { FeedItem, feedItemMocks } from "../models/feed-item.model";
 import { BehaviorSubject } from "rxjs";
@@ -17,7 +16,6 @@ export class FeedProviderService {
 
   async getFeed(): Promise<BehaviorSubject<FeedItem[]>> {
     const req = await this.api.get("/feed");
-    // @ts-ignore
     const items = <FeedItem[]>req.rows;
     this.currentFeed$.next(items);
     return Promise.resolve(this.currentFeed$);
@@ -28,6 +26,7 @@ export class FeedProviderService {
       caption: caption,
       url: file.name,
     });
+    // @ts-ignore
     const feed = [res, ...this.currentFeed$.value];
     this.currentFeed$.next(feed);
     return res;
