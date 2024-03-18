@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: Udagram-ebs-env-1999
+    environment: udagram-ebs-env
     group_suffix: null
 global:
   application_name: udagram-ebs
