@@ -108,6 +108,8 @@ Provision the necessary AWS services needed for running the application:
      ![Deploy](/images/build-aws.png)
 - Latest Build CI_CD:
   ![Register](/images/latest-build.png)
+- Latest CIRCLECI-ENVS:
+  ![Register](/images/ENVS-CIRCLECI-ATTACHT-PORT.png)
 - AWS RDS Overview:
   ![RDS](/images/RDS.png)
 - S3 :
