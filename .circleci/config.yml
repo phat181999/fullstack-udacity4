@@ -47,11 +47,11 @@ jobs:
             ls -la
             npm run build
       # TODO: Build the backend API
-      - run:
-          name: API Build
-          command: |
-            echo "TODO: Build the backend API"
-            npm run api:build
+      # - run:
+      #     name: API Build
+      #     command: |
+      #       echo "TODO: Build the backend API"
+      #       npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -60,9 +60,9 @@ jobs:
     steps:
       - node/install:
           node-version: "14.15"
-      - eb/setup
-      - aws-cli/setup
-      - checkout
+      # - eb/setup
+      # - aws-cli/setup
+      # - checkout
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
