@@ -1,9 +1,9 @@
 branch-defaults:
   default:
-    environment: udagram-ebs-env
+    environment: ugram-api-dev
     group_suffix: null
 global:
-  application_name: udagram-ebs
+  application_name: udagram-api
   branch: null
   default_ec2_keyname: uda-keypair
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
