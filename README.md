@@ -16,8 +16,6 @@ The project will also include writing documentation and runbooks covering the op
 
 This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
-
-
 ### Dependencies
 
 ```
@@ -39,6 +37,7 @@ Provision the necessary AWS services needed for running the application:
 
 1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
 1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
+
 1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
 1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
@@ -70,3 +69,57 @@ The e2e tests are using Protractor and Jasmine.
 ## License
 
 [License](LICENSE.txt)
+
+### Installation
+
+Provision the necessary AWS services needed for running the application:
+
+1. In AWS, provision a publicly available RDS database running Postgres. `databasepgadmin.cxzddeylzo0t.us-east-1.rds.amazonaws.com`
+1. In AWS, provision a s3 bucket for hosting the uploaded files. `http://leader-udagram.s3-website-us-east-1.amazonaws.com/home`
+1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
+   AWS_BUCKET arn:aws:s3:::leader-udagram
+   AWS_REGION us-east-1
+   JWT_SECRET mysecretstring
+   PORT 3000
+   POSTGRES_DB databasepgadmin
+   POSTGRES_HOST databasepgadmin.cxzddeylzo0t.us-east-1.rds.amazonaws.com
+   POSTGRES_PASSWORD databasepgadmin
+   POSTGRES_USERNAME databasepgadmin
+
+- URL=http://localhost:8100
+
+1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
+1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+
+# Steps I have done and all the screenshots and link of application
+
+## Front-End link:
+
+- The link of UI : http://leader-udagram.s3-website-us-east-1.amazonaws.com/home
+
+## Screenshots
+
+- Last successul CircleCi build :
+  1. Build - phase :
+     ![Build.png](/images/build.png)
+  2. Hold on - phase:
+     ![HoldOn.png](/images/build.png)
+  3. Deploy - phase:
+     ![Deploy](/images/build-aws.png)
+- Latest Build CI_CD:
+  ![Register](/images/latest-build.png)
+- AWS RDS Overview:
+  ![RDS](/images/RDS.png)
+- S3 :
+  ![S3](/images/bucket-s3.png)
+  ![S3](/images/bucket-s3-2.png)
+- Elasticbeanstalk :
+  ![EB](/images/Elasic-Beantalk.png)
+- Environment Variable in CircleCi:
+  ![Env](/images/Envs.png)
+- Home Page:
+  ![HomePage](/images/webapp.png)
+- Home Page Register:
+  ![Register](/images/webapp-2.png)
+
+https://github.com/phat181999/fullstack-udacity4
